@@ -4,20 +4,8 @@ using System.Runtime.Serialization;
 namespace sm_coding_challenge.Models
 {
     [DataContract]
-    public class DataResponseModel
+    public class PlayerDataModel
     {
-        [DataMember(Name = "week")]
-        public string Week { get; set; }
-
-        [DataMember(Name = "sportName")]
-        public string SportName { get; set; }
-
-        [DataMember(Name = "competitionName")]
-        public string CompetitionName { get; set; }
-
-        [DataMember(Name = "seasonID")]
-        public string SeasonId { get; set; }
-
         [DataMember(Name = "rushing")]
         public List<PlayerRushingModel> Rushing { get; set; }
 
@@ -29,11 +17,5 @@ namespace sm_coding_challenge.Models
 
         [DataMember(Name = "kicking")]
         public List<PlayerKickingModel> Kicking { get; set; }
-
-        public DataResponseModel()
-        {
-
-        }
     }
 }
-

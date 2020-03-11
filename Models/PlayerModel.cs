@@ -2,6 +2,7 @@ using System.Runtime.Serialization;
 
 namespace sm_coding_challenge.Models
 {
+    // Added order 
     [DataContract]
     public class PlayerModel
     {
@@ -15,4 +16,3 @@ namespace sm_coding_challenge.Models
         public string Position { get; set; }
     }
 }
-
